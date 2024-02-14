@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>50 lines picture</title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+
+<canvas id="result"></canvas>
+<input type="file" accept="image/*" id="file-input">
+
+<script src="main.js" defer></script>
+
+  <section id="settingsPanel">
+    <div class="row">
+      <div class="col"><input type="range" id="waveFrequencySlider" min="1" max="90" /></div>
+      <div class="col"><span id="waveFrequencyValue"></span></div>
+      <div class="col"><label for="waveFrequencySlider">wave frequency</label></div>
+    </div>
+    <div class="row">
+      <div class="col"><input type="range" id="lineWidthSlider" min="1" max="10"/></div>
+      <div class="col"><span id="lineWidthValue"></span></div>
+      <div class="col"><label for="lineWidthSlider">line width</label></div>
+    </div>
+    <div class="row">
+      <div class="col"><input type="range" id="rowsDensitySlider" min="4" max="10" step="0.1" /></div>
+      <div class="col"><span id="rowsDensityValue"></span></div>
+      <div class="col"><label for="rowsDensitySlider">rows density</label></div>
+    </div>
+
+    <div class="row">
+      <div class="col"><input type="color" id="lineColorPicker" /></div>
+      <div class="col"><span id="colorPickerValue"></span></div>
+      <div class="col"><label for="lineColorPicker">color picker</label></div>
+    </div>
+  </section>
+
+  <footer>
+    My <a href="https://titar.pro" target="_blank">webpage</a>, actual code is in <a href="https://github.com/ti-tar/50-lines-picture" target="_blank">Git repo</a>. Inspired by <a href="https://gist.github.com/u-ndefine/8e4bc21be4275f87fefe7b2a68487161" target="_blank">this</a> and <a href="https://github.com/Loskir/50-lines/tree/master">this</a>.
+  </footer>
+
+</body>
+</html>
